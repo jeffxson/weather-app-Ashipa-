@@ -1,20 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Image, View } from "react-native";
+import Header from "./header";
+import Today from "./today";
+import ShopCarousel from "./cersel";
+import Footer from "./footer";
+import { useEffect, useState } from "react";
+import { useFonts } from "expo-font";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View
+      style={[
+        styles.container,
+        {
+          flexDirection: "column",
+        },
+      ]}
+    >
+      <View style={{ flex: 1 }}>
+        <Header />
+      </View>
+      <View style={{ flex: 3 }}>
+        <Today />
+      </View>
+
+      <View style={{ flex: 2 }}>
+        <ShopCarousel />
+      </View>
+      <View style={{ flex: 2 }}>
+        <Footer />
+      </View>
     </View>
   );
-}
-
+};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
+
+export default App;
