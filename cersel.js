@@ -17,27 +17,27 @@ const { width: windowWidth } = Dimensions.get("window");
 const data = [
   {
     id: "item2",
-    image: "http://openweathermap.org/img/wn/10d@2x.png",
+    image: "http://openweathermap.org/img/wn/09d@2x.png",
     time: "9am",
 
     temp: "25°C",
   },
   {
     id: "item3",
-    image: "http://openweathermap.org/img/wn/10d@2x.png",
+    image: "http://openweathermap.org/img/wn/09d@2x.png",
     time: "11am",
     temp: "23°C",
   },
   {
     id: "item1",
-    image: "http://openweathermap.org/img/wn/10d@2x.png",
+    image: "http://openweathermap.org/img/wn/04d@2x.png",
     time: "1am",
 
     temp: "26°C",
   },
   {
     id: "item6",
-    image: "http://openweathermap.org/img/wn/10d@2x.png",
+    image: "http://openweathermap.org/img/wn/09d@2x.png",
     time: "3am",
 
     temp: "22°C",
